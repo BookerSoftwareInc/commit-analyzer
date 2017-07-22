@@ -1,6 +1,7 @@
 const { parseRawCommit } = require('conventional-changelog/lib/git')
 
 module.exports = function (pluginConfig, {commits}, cb) {
+  const MINOR_TYPES = ['fix', 'docs', 'style', 'refactor', 'chore', 'test']
   let type = null
 
   commits
@@ -17,7 +18,7 @@ module.exports = function (pluginConfig, {commits}, cb) {
 
     if (commit.type === 'feat') type = 'minor'
 
-    if (!type && commit.type === 'fix') type = 'patch'
+    if (!type && MINOR_TYPES.indexOf(commit.type) != -1) type = 'patch'
 
     return true
   })
