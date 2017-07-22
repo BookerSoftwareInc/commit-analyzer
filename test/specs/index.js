@@ -9,7 +9,7 @@ test('derive version number from commits', (t) => {
     analyzer({}, {
       commits: [{
         hash: 'asdf',
-        message: 'chore: build script'
+        message: 'build script'
       }]
     }, (err, type) => {
       tt.error(err)
@@ -27,6 +27,21 @@ test('derive version number from commits', (t) => {
       }, {
         hash: '1234',
         message: 'fix(scope): even nastier bug'
+      }, {
+        hash: '1234',
+        message: 'docs(scope): even nastier bug'
+      }, {
+        hash: '1234',
+        message: 'style(scope): even nastier bug'
+      }, {
+        hash: '1234',
+        message: 'refactor(scope): even nastier bug'
+      }, {
+        hash: '1234',
+        message: 'chore(scope): even nastier bug'
+      }, {
+        hash: '1234',
+        message: 'test(scope): even nastier bug'
       }]
     }, (err, type) => {
       tt.error(err)

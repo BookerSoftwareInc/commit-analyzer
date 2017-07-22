@@ -18,7 +18,7 @@ module.exports = function (pluginConfig, {commits}, cb) {
 
     if (commit.type === 'feat') type = 'minor'
 
-    if (!type && MINOR_TYPES.indexOf(commit.type) != -1) type = 'patch'
+    if (!type && MINOR_TYPES.indexOf(commit.type) !== -1) type = 'patch'
 
     return true
   })
