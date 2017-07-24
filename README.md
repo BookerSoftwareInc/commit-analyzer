@@ -1,3 +1,6 @@
+# NOTE
+> TODO: Refactor, do PR to allow customization options to be passed in the package.json config, so we don't need to use this fork any longer
+
 # semantic-release commit-analyzer
 [![npm version](https://badge.fury.io/js/%40semantic-release%2Fcommit-analyzer.svg)](http://badge.fury.io/js/%40semantic-release%2Fcommit-analyzer)
 [![Build Status](https://travis-ci.org/semantic-release/commit-analyzer.svg?branch=master)](https://travis-ci.org/semantic-release/commit-analyzer)
