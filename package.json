@@ -1,6 +1,6 @@
 {
   "name": "@semantic-release/commit-analyzer",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "derive next semantic version from commits",
   "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
   "bugs": {
